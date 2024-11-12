@@ -29,9 +29,9 @@ backend:
     database_error:
       other: データサーバーエラー
     forbidden_error:
-      other: Forbidden.
+      other: 禁止されています。
     duplicate_request_error:
-      other: Duplicate submission.
+      other: 重複した提出。
   action:
     report:
       other: フラグ
@@ -42,21 +42,21 @@ backend:
     close:
       other: 閉じる
     reopen:
-      other: Reopen
+      other: 再開する
     forbidden_error:
-      other: Forbidden.
+      other: 禁止されたアクセス
     pin:
-      other: Pin
+      other: ピン留め
     hide:
-      other: Unlist
+      other: 非表示
     unpin:
-      other: Unpin
+      other: ピン留め解除
     show:
       other: リスト
     invite_someone_to_answer:
-      other: 編集
+      other: 誰かを回答に招待する
     undelete:
-      other: Undelete
+      other: 削除を取り消す
   role:
     name:
       user:
@@ -67,21 +67,21 @@ backend:
         other: モデレーター
     description:
       user:
-        other: Default with no special access.
+        other: 一般ユーザー
       admin:
-        other: Have the full power to access the site.
+        other: すべての機能へのアクセス権を持つ
       moderator:
-        other: Has access to all posts except admin settings.
+        other: 一部の機能へのアクセス権を持つ
   privilege:
     level_1:
       description:
-        other: Level 1 (less reputation required for private team, group)
+        other: Level 1 (startup community向けの低い評判が必要)
     level_2:
       description:
-        other: Level 2 (low reputation required for startup community)
+        other: Level 2 (成熟したコミュニティ向けの中程度の評判が必要)
     level_3:
       description:
-        other: Level 3 (high reputation required for mature community)
+        other: Level 3 (成熟したコミュニティ向けの高い評判が必要)
     level_custom:
       description:
         other: Custom Level
@@ -94,7 +94,7 @@ backend:
     rank_report_add_label:
       other: フラグ
     rank_comment_vote_up_label:
-      other: Upvote comment
+      other: コメントに投票
     rank_link_url_limit_label:
       other: Post more than 2 links at a time
     rank_question_vote_up_label:
@@ -106,7 +106,7 @@ backend:
     rank_answer_vote_down_label:
       other: Downvote answer
     rank_invite_someone_to_answer_label:
-      other: Invite someone to answer
+      other: 回答者を招待
     rank_tag_add_label:
       other: 新しいタグを作成
     rank_tag_edit_label:
@@ -144,17 +144,17 @@ backend:
   error:
     common:
       invalid_url:
-        other: Invalid URL.
+        other: 無効なURLです!
       status_invalid:
-        other: Invalid status.
+        other: 無効なステータスです!
     password:
       space_invalid:
-        other: Password cannot contain spaces.
+        other: パスワードにスペースを含めることはできません。
     admin:
       cannot_update_their_password:
         other: パスワードは変更できません。
       cannot_edit_their_profile:
-        other: You cannot modify your profile.
+        other: プロフィールを編集できません。
       cannot_modify_self_status:
         other: ステータスを変更できません。
       email_or_password_wrong:
@@ -183,7 +183,7 @@ backend:
       verify_url_expired:
         other: メール認証済みURLの有効期限が切れています。メールを再送信してください。
       illegal_email_domain_error:
-        other: Email is not allowed from that email domain. Please use another one.
+        other: メールドメインが不正です。
     lang:
       not_found:
         other: 言語ファイルが見つかりません。
@@ -207,7 +207,7 @@ backend:
       new_password_same_as_previous_setting:
         other: 新しいパスワードは前のパスワードと同じです。
       already_deleted:
-        other: This post has been deleted.
+        other: この投稿は削除されました。
     meta:
       object_not_found:
         other: Meta object not found
@@ -226,11 +226,11 @@ backend:
         other: 更新する権限がありません。
     rank:
       fail_to_meet_the_condition:
-        other: Reputation rank fail to meet the condition.
+        other: 評判ランクが条件を満たしていません。
       vote_fail_to_meet_the_condition:
-        other: Thanks for the feedback. You need at least {{.Rank}} reputation to cast a vote.
+        other: フィードバックありがとうございます。投票するには少なくとも{{.Rank}}の評判が必要です。
       no_enough_rank_to_operate:
-        other: You need at least {{.Rank}} reputation to do this.
+        other: これを行うには少なくとも{{.Rank}}の評判が必要です。
     report:
       handle_failed:
         other: レポートの処理に失敗しました。
@@ -242,17 +242,17 @@ backend:
       not_found:
         other: タグが見つかりません。
       recommend_tag_not_found:
-        other: Recommend tag is not exist.
+        other: おすすめのタグが見つかりません。
       recommend_tag_enter:
         other: 少なくとも 1 つの必須タグを入力してください。
       not_contain_synonym_tags:
         other: 同義語のタグを含めないでください。
       cannot_update:
-        other: No permission to update.
+        other: 更新する権限がありません。
       is_used_cannot_delete:
-        other: You cannot delete a tag that is in use.
+        other: 使用中のタグは削除できません。
       cannot_set_synonym_as_itself:
-        other: You cannot set the synonym of the current tag as itself.
+        other: 
     smtp:
       config_from_name_cannot_be_email:
         other: The from name cannot be a email address.
@@ -275,134 +275,134 @@ backend:
       not_found:
         other: ユーザーが見つかりません。
       suspended:
-        other: User has been suspended.
+        other: アカウントは凍結されています。
       username_invalid:
-        other: Username is invalid.
+        other: ユーザー名が無効です。
       username_duplicate:
-        other: Username is already in use.
+        other: すでに存在するユーザー名です。
       set_avatar:
-        other: Avatar set failed.
+        other: アバターを設定してください。
       cannot_update_your_role:
-        other: You cannot modify your role.
+        other: 自分のロールを更新できません。
       not_allowed_registration:
-        other: Currently the site is not open for registration.
+        other: 現在、登録は許可されていません。
       not_allowed_login_via_password:
-        other: Currently the site is not allowed to login via password.
+        other: パスワードでのログインは許可されていません。
       access_denied:
         other: アクセスが拒否されました
       page_access_denied:
-        other: You do not have access to this page.
+        other: ページアクセスが拒否されました
       add_bulk_users_format_error:
-        other: "Error {{.Field}} format near '{{.Content}}' at line {{.Line}}. {{.ExtraMessage}}"
+        other: "{{.Line}}行目の'{{.Content}}'付近の{{.Field}}形式エラー。{{.ExtraMessage}}"
       add_bulk_users_amount_error:
-        other: "The number of users you add at once should be in the range of 1-{{.MaxAmount}}."
+        other: "一度に追加できるユーザーの数は1から{{.MaxAmount}}の範囲内でなければなりません。"
     config:
       read_config_failed:
-        other: Read config failed
+        other: 設定ファイルの読み込みに失敗しました。
     database:
       connection_failed:
-        other: Database connection failed
+        other: データベースに接続できません。
       create_table_failed:
         other: テーブルの作成に失敗しました
     install:
       create_config_failed:
-        other: Can't create the config.yaml file.
+        other: config.yamlの作成に失敗しました。
     upload:
       unsupported_file_format:
-        other: Unsupported file format.
+        other: サポートされていないファイル形式です。
     site_info:
       config_not_found:
-        other: Site config not found.
+        other: サイト情報が見つかりません。
     badge:
       object_not_found:
-        other: Badge object not found
+        other: バッジが見つかりません。
   reason:
     spam:
       name:
-        other: spam
+        other: スパム
       desc:
-        other: This post is an advertisement, or vandalism. It is not useful or relevant to the current topic.
+        other: この投稿は広告または破壊行為です。現在のトピックに役立つまたは関連するものではありません。
     rude_or_abusive:
       name:
-        other: rude or abusive
+        other: 失礼または虐待
       desc:
-        other: "A reasonable person would find this content inappropriate for respectful discourse."
+        other: "常識的な人なら、この内容を敬意を持った対話にふさわしくないと感じるでしょう。"
     a_duplicate:
       name:
-        other: a duplicate
+        other: 重複
       desc:
-        other: This question has been asked before and already has an answer.
+        other: この質問は以前に尋ねられており、すでに回答があります。
       placeholder:
-        other: Enter the existing question link
+        other: 既存の質問リンクを入力してください
     not_a_answer:
       name:
-        other: not an answer
+        other: 回答ではない
       desc:
-        other: "This was posted as an answer, but it does not attempt to answer the question. It should possibly be an edit, a comment, another question,or deleted altogether."
+        other: "これは回答として投稿されましたが、質問に答えようとしていません。おそらく編集、コメント、別の質問、または完全に削除する必要があります。"
     no_longer_needed:
       name:
-        other: no longer needed
+        other: もう必要ない
       desc:
-        other: This comment is outdated, conversational or not relevant to this post.
+        other: このコメントは時代遅れ、会話的、またはこの投稿に関連していません。
     something:
       name:
-        other: something else
+        other: その他
       desc:
-        other: This post requires staff attention for another reason not listed above.
+        other: この投稿には、上記にリストされていない別の理由でスタッフの注意が必要です。
       placeholder:
-        other: Let us know specifically what you are concerned about
+        other: 具体的に何が気になるのか教えてください
     community_specific:
       name:
-        other: a community-specific reason
+        other: コミュニティ固有の理由
       desc:
-        other: This question doesn't meet a community guideline.
+        other: この質問はコミュニティガイドラインに合致していません。
     not_clarity:
       name:
-        other: needs details or clarity
+        other: 詳細または明確さが必要
       desc:
-        other: This question currently includes multiple questions in one. It should focus on one problem only.
+        other: この質問には現在、複数の質問が含まれています。1つの問題に集中する必要があります。
     looks_ok:
       name:
-        other: looks OK
+        other: 問題なし
       desc:
-        other: This post is good as-is and not low quality.
+        other: この投稿はそのままで良好であり、低品質ではありません。
     needs_edit:
       name:
-        other: needs edit, and I did it
+        other: 編集が必要で、私が行いました
       desc:
-        other: Improve and correct problems with this post yourself.
+        other: この投稿の問題を自分で改善し、修正してください。
     needs_close:
       name:
-        other: needs close
+        other: 閉鎖が必要
       desc:
-        other: A closed question can't answer, but still can edit, vote and comment.
+        other: 閉鎖された質問は回答できませんが、編集、投票、コメントは可能です。
     needs_delete:
       name:
-        other: needs delete
+        other: 削除が必要
       desc:
-        other: This post will be deleted.
+        other: この投稿は削除されます。
   question:
     close:
       duplicate:
         name:
-          other: スパム
+          other: 重複
         desc:
-          other: This question has been asked before and already has an answer.
+          other: この質問は以前に尋ねられており、すでに回答があります。
       guideline:
         name:
-          other: a community-specific reason
+          other: コミュニティ固有の理由
         desc:
-          other: This question doesn't meet a community guideline.
+          other: この質問はコミュニティガイドラインに合致していません。
       multiple:
         name:
-          other: needs details or clarity
+          other: 詳細または明確さが必要
         desc:
-          other: This question currently includes multiple questions in one. It should focus on one problem only.
+          other: この質問には現在、複数の質問が含まれています。1つの問題に集中する必要があります。
       other:
         name:
-          other: something else
+          other: その他
         desc:
-          other: This post requires another reason not listed above.
+          other: この投稿には、上記にリストされていない別の理由が必要です。
     operation_type:
       asked:
         other: 質問済み
@@ -411,14 +411,14 @@ backend:
       modified:
         other: 修正済み
     deleted_title:
-      other: Deleted question
+      other: 削除された質問
     questions_title:
-      other: Questions
+      other: 質問
   tag:
     tags_title:
-      other: Tags
+      other: タグ
     no_description:
-      other: The tag has no description.
+      other: 説明がありません
   notification:
     action:
       update_question:
@@ -826,9 +826,9 @@ ui:
   notifications:
     title: 通知
     inbox: 受信トレイ
-    achievement: Achievements
+    achievement: 実績
     new_alerts: New alerts
-    all_read: Mark all as read
+    all_read: すべて既読
     show_more: もっと見る
     someone: Someone
     inbox_type:
@@ -1019,7 +1019,7 @@ ui:
     title: タグを編集
     default_reason: タグを編集
     default_first_reason: Add tag
-    btn_save_edits: Save edits
+    btn_save_edits: 変更を保存
     btn_cancel: キャンセル
   dates:
     long_date: MMM D
@@ -1072,7 +1072,7 @@ ui:
           label: Edit summary
           placeholder: >-
             Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
-    btn_save_edits: Save edits
+    btn_save_edits: 変更を保存
     btn_cancel: キャンセル
   tags:
     title: タグ
@@ -1119,7 +1119,7 @@ ui:
           placeholder: >-
             Briefly explain your changes (corrected spelling, fixed grammar, improved formatting)
     btn_post_question: Post your question
-    btn_save_edits: Save edits
+    btn_save_edits: 変更を保存
     answer_question: Answer your own question
     post_question&answer: Post your question and answer
   tag_selector:
@@ -1131,13 +1131,13 @@ ui:
     tag_required_text: Required tag (at least one)
   header:
     nav:
-      question: Questions
-      tag: Tags
-      user: Users
-      badges: Badges
-      profile: Profile
-      setting: Settings
-      logout: Log out
+      question: 質問
+      tag: タグ
+      user: ユーザー
+      badges: バッジ
+      profile: プロフィール
+      setting: 設定
+      logout: ログアウト
       admin: 管理者
       review: レビュー
       bookmark: ブックマーク
@@ -1241,23 +1241,23 @@ ui:
     page_title: 設定
     goto_modify: Go to modify
     nav:
-      profile: Profile
+      profile: プロフィール
       notification: Notifications
       account: Account
-      interface: Interface
+      interface: インターフェース
     profile:
-      heading: Profile
-      btn_name: Save
+      heading: プロフィール
+      btn_name: 変更を保存
       display_name:
         label: Display name
         msg: Display name cannot be empty.
         msg_range: Display name up to 30 characters.
       username:
         label: ユーザー名
-        caption: People can mention you as "@username".
-        msg: Username cannot be empty.
-        msg_range: Username up to 30 characters.
-        character: 'Must use the character set "a-z", "0-9", " - . _"'
+        caption: ユーザー名は"@username"としてメンションされます!
+        msg: ユーザーネームは空にできません。
+        msg_range: ユーザーネームは最大 30 文字までです。
+        character: 'ユーザーネームは「a-z」、「A-Z」、「0-9」、「_」、「-」のみ使用できます。'
       avatar:
         label: プロフィール画像
         gravatar: Gravatar
@@ -1267,19 +1267,19 @@ ui:
         default: システム
         msg: Please upload an avatar
       bio:
-        label: About me
+        label: 自己紹介
       website:
         label: ウェブサイト
         placeholder: "http://example.com"
         msg: Website incorrect format
       location:
-        label: Location
-        placeholder: "City, Country"
+        label: ロケーション
+        placeholder: "北海道,日本"
     notification:
-      heading: Email Notifications
-      turn_on: Turn on
+      heading: メール通知
+      turn_on: 有効化
       inbox:
-        label: Inbox notifications
+        label: メールへの通知
         description: Answers to your questions, comments, invites, and more.
       all_new_question:
         label: All new questions
@@ -1313,10 +1313,10 @@ ui:
       pass_confirm:
         label: Confirm new password
     interface:
-      heading: Interface
+      heading: インターフェース
       lang:
-        label: Interface language
-        text: User interface language. It will change when you refresh the page.
+        label: 表示言語
+        text: この変更はリロード後に有効になります。
     my_logins:
       title: My logins
       label: Log in or sign up on this site using these accounts.
@@ -1418,17 +1418,17 @@ ui:
     confirm: Confirm
     cancel: Cancel
     edit: Edit
-    save: Save
+    save: 保存
     delete: Delete
     undelete: Undelete
     list: List
     unlist: Unlist
     unlisted: Unlisted
-    login: Log in
+    login: ログイン
     signup: 新規登録
-    logout: Log out
+    logout: ログアウト
     verify: Verify
-    add_question: Add question
+    add_question: 質問する
     approve: Approve
     reject: Reject
     skip: Skip
@@ -1466,8 +1466,8 @@ ui:
     title: Search Results
     keywords: Keywords
     options: Options
-    follow: Follow
-    following: Following
+    follow: フォロー
+    following: フォロー中
     counts: "{{count}} Results"
     more: More
     sort_btns:
@@ -1509,20 +1509,20 @@ ui:
     success_desc: You have been successfully removed from this subscriber list and won't receive any further emails from us.
     link: Change settings
   question:
-    following_tags: Following Tags
+    following_tags: フォロー中のタグ
     edit: Edit
-    save: Save
-    follow_tag_tip: Follow tags to curate your list of questions.
-    hot_questions: Hot Questions
-    all_questions: All Questions
-    x_questions: "{{ count }} Questions"
-    x_answers: "{{ count }} answers"
+    save: 保存
+    follow_tag_tip: タグをフォローすると、そのタグに関する新しい質問があると通知されます。
+    hot_questions: 人気の質問
+    all_questions: すべての質問
+    x_questions: "{{ count }} 質問"
+    x_answers: "{{ count }} 回答"
     questions: 質問
     answers: 回答
     newest: 最新
-    active: 有効
-    hot: Hot
-    recommend: Recommend
+    active: 回答募集中
+    hot: 人気
+    recommend: おすすめ
     score: スコア
     unanswered: 未回答
     modified: 修正済み
@@ -1536,15 +1536,15 @@ ui:
     answers: 回答
     answer: 回答
     questions: 質問
-    question: question
-    bookmarks: Bookmarks
-    reputation: Reputation
-    comments: Comments
-    votes: Votes
-    badges: Badges
+    question: 質問
+    bookmarks: ブックマーク
+    reputation: reputation
+    comments: コメント
+    votes: 投票
+    badges: バッジ
     newest: Newest
-    score: Score
-    edit_profile: Edit profile
+    score: スコア
+    edit_profile: プロフィールを編集
     visited_x_days: "Visited {{ count }} days"
     viewed: Viewed
     joined: Joined
@@ -1788,7 +1788,7 @@ ui:
       btn_cancel: Cancel
       btn_submit: Submit
     edit_profile_modal:
-      title: Edit profile
+      title: プロフィールを編集
       form:
         fields:
           display_name:
@@ -1848,7 +1848,7 @@ ui:
       filter:
         placeholder: "Filter by name, user:id"
       set_new_password: 新しいパスワードを設定します。
-      edit_profile: Edit profile
+      edit_profile: プロフィールを編集
       change_status: ステータスを変更
       change_role: ロールを変更
       show_logs: ログを表示
@@ -2096,19 +2096,19 @@ ui:
         label: Gravatar Base URL
         text: URL of the Gravatar provider's API base. Ignored when empty.
       profile_editable:
-        title: Profile editable
+        title: プロフィール編集
       allow_update_display_name:
-        label: Allow users to change their display name
+        label: 表示名の変更を許可
       allow_update_username:
-        label: Allow users to change their username
+        label: ユーザー名の変更を許可
       allow_update_avatar:
-        label: Allow users to change their profile image
+        label: プロフィール画像の変更を許可
       allow_update_bio:
-        label: Allow users to change their about me
+        label: 自己紹介の変更を許可
       allow_update_website:
-        label: Allow users to change their website
+        label: ウェブサイトの変更を許可
       allow_update_location:
-        label: Allow users to change their location
+        label: ロケーションの変更を許可
     privilege:
       title: Privileges
       level:
@@ -2206,7 +2206,7 @@ ui:
     votes: votes
   prompt:
     leave_page: Are you sure you want to leave the page?
-    changes_not_save: Your changes may not be saved.
+    changes_not_save: この変更は保存されません。
   draft:
     discard_confirm: Are you sure you want to discard your draft?
   messages:
