@@ -37,7 +37,7 @@ language_options:
     progress: 78
   - label: "日本語"
     value: "ja_JP"
-    progress: 11
+    progress: 100
   - label: "Italiano"
     value: "it_IT"
     progress: 89
